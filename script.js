@@ -1,5 +1,17 @@
-const button = document.querySelector(".button");
+const offset = 0;
+const limit = 10;
 
-button.addEventListener('click', ()=>{
-    alert("Clicou");
-});
+const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+
+fetch(url)
+  .then((response) => {
+    return response.json();
+  }).then((res) => {
+    console.log(res);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log("requisition complete");
+  });
