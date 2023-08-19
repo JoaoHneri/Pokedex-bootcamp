@@ -17,9 +17,9 @@
 
 <body>
     <section class="content">
-        <h1>
-            Pokedex
-        </h1>
+        <div class="imageLogo">
+            <img src="./image/180619084-a56960ab-7efa-4e34-9d33-4e3e581d62ff-removebg-preview.png" alt="Pokédex">
+        </div>
         <ol id="pokemonList" class="pokemons">
             <!-- <li class="pokemon">
                 <span class="number">#001</span>
@@ -48,7 +48,11 @@
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg" alt="Imagem pokemon">
             </li> -->
         </ol>
+        <div class="pagination">
+            <button id="carregarMais" type="button">Carregar Mais</button>
+        </div>
     </section>
+    <script src="./poke-model.js"></script>
     <script src="./pokeApi.js"></script>
     <script src="./script.js"></script>
 </body>
